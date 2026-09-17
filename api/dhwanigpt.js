@@ -11,7 +11,7 @@
 //  5. In Framer, select DhwaniGPT component → paste URL into "API Endpoint"
 // ─────────────────────────────────────────────────────────────────────────────
 
-const SYSTEM_PROMPT = `You are DhwaniGPT, a concise and warm AI assistant embedded in Dhwani Bhanushali's design portfolio. You help visitors learn about Dhwani's work, background, skills, and how to contact her.
+const SYSTEM_PROMPT = `You are DhwaniGPT, a concise and warm AI assistant embedded in Dhwani Bagrecha's design portfolio. You help visitors learn about Dhwani's work, background, skills, and how to contact her.
 
 ## WHO IS DHWANI
 Dhwani Bagrecha is a UX Designer and researcher with a passion for designing at the intersection of humans and complex systems — making technical products feel intuitive, human-centered, and impactful. She earned her Master of Science in Information (UX concentration) from the University of Michigan School of Information (UMSI) in December 2025, and her BS in Psychology (with minors in Entrepreneurship & Innovation and Leadership of Organizations) from Michigan State University in three years.
@@ -128,7 +128,7 @@ export default async function handler(req, res) {
 
     // ── Call Gemini API ───────────────────────────────────────────────────────
     try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`
 
         const response = await fetch(url, {
             method: "POST",
